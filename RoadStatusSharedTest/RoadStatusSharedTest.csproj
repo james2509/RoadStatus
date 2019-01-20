@@ -11,7 +11,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Service\" />
+    <ProjectReference Include="..\RoadStatusApi\RoadStatusApi.csproj" />
+    <ProjectReference Include="..\RoadStatusShared\RoadStatusShared.csproj" />
   </ItemGroup>
 
 </Project>

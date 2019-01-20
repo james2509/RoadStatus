@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ConfigProvider\ConfigProvider.csproj" />
+    <ProjectReference Include="..\RoadStatusSharedTest\RoadStatusSharedTest.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,6 +1,8 @@
 ﻿using System;
 using ConfigProvider;
 using ConfigProvider.Exceptions;
+using Logging;
+using RoadStatusSharedTest.Fakes;
 using Xunit;
 
 namespace ConfigProviderTest
@@ -14,7 +16,7 @@ namespace ConfigProviderTest
         private void ValidateTflRoadEnpointIsBuildCorrectlyFromConfig()
         {
             //Arrange
-            var provider = new JsonFileConfigurationProvider();
+            var provider = new JsonFileConfigurationProvider(new FakeLogger());
 
             //Act
             var endpointString = provider.GetConfiguration().GetRoadSummaryEndPoint("A2");
@@ -27,7 +29,7 @@ namespace ConfigProviderTest
         private void ExceptionIsThrownWhenConfigIsMissing()
         {
             //Arrange
-            var provider = new JsonFileConfigurationProvider();
+            var provider = new JsonFileConfigurationProvider(new FakeLogger());
 
             //Assert
             var exception = Assert.Throws<RoadSummaryConfigException>(() => provider.GetConfiguration().GetRoadSummaryEndPoint(""));

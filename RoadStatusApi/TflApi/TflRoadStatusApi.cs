@@ -6,6 +6,7 @@ using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using ConfigProvider;
+using Logging;
 using Newtonsoft.Json.Linq;
 using RoadStatusApi.Exception;
 using RoadStatusApi.Interface;
@@ -19,14 +20,17 @@ namespace RoadStatusApi.TflApi
     public class TflRoadStatusApi : IRoadStatusApi
     {
         private IConfigurationProvider _configProvider;
+        private ILogger _logger;
 
-        public TflRoadStatusApi(IConfigurationProvider configProvider)
+        public TflRoadStatusApi(IConfigurationProvider configProvider, ILogger logger)
         {
             _configProvider = configProvider;
+            _logger = logger;
         }
 
         public async Task<RoadStatus> GetRoadStatusAsync(string roadId)
         {
+            _logger.LogInfo($"Calling API to get Road data for Road {roadId}");
             RoadStatus roadStatus;
 
             using (var tflClient = new HttpClient())
@@ -54,14 +58,17 @@ namespace RoadStatusApi.TflApi
                 else
                     if (response.StatusCode == HttpStatusCode.NotFound)
                     {
+                        _logger.LogInfo($"Road status data not found for Road Id: {roadId}");
                         roadStatus = new RoadStatus
                         {
+                            DisplayName = roadId,
                             RoadFound = false
                         };
                     }
                     else
                     {
-                        throw new RoadStatusApiException(response.StatusCode.ToString());
+                        _logger.LogError($"Unexpected response from Tfl API: {response.StatusCode.ToString()}");
+                        throw new RoadStatusApiException(response.ReasonPhrase.ToString());
                     }
             }
 
