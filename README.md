@@ -35,7 +35,7 @@ There is a configuration file called config.json which needs to be updated with 
 The build will generate the code to RoadStatus project in the bin\Debug\netcoreapp2.1 folder. To run the output run "dotnet roadstatus.dll {param}" where {param} is the RoadId the app should check. 
 E.g. C:\Git\RoadStatus\bin\Debug\netcoreapp2.1>dotnet roadstatus.dll A12
 
-To check the exit code then run "echo %errorlevel".
+To check the exit code then run "echo %errorlevel%".
 E.g. C:\Git\RoadStatus\bin\Debug\netcoreapp2.1>echo %errorlevel%
 
 ## Running the Tests
