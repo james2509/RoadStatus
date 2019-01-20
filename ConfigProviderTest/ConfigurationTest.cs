@@ -9,7 +9,7 @@ namespace ConfigProviderTest
 {
     public class ConfigurationTest
     {
-        private const string BuiltEndPoint = @"https://api.tfl.gov.uk/Road/A2?app_id=061b50e1& app_key=d0fc4da5d0ae282311eee0d5024b2f12";
+        private const string BuiltEndPoint = @"https://api.tfl.gov.uk/Road/A2?app_id=testid& app_key=testkey";
         private const string BuiltEndPointConfigException = "One or more required endpoint configuration parameters are missing";
 
         [Fact]

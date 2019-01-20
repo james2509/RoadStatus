@@ -1,5 +1,5 @@
 ﻿{
-  "TflApplicationId": "",
-  "TflDeveloperKey": "",
+  "TflApplicationId": "testid",
+  "TflDeveloperKey": "testkey",
   "TflRoadSummaryEndpoint": "https://api.tfl.gov.uk/Road/{0}?app_id={1}& app_key={2}"
 }
