@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2000
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RoadStatus", "RoadStatus\RoadStatus.csproj", "{53B0B884-0F30-46FB-BBB3-43D3D43E0F9D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RoadStatusShared", "RoadStatusShared\RoadStatusShared.csproj", "{CB5C5FD0-453A-47F0-B698-F7687D711578}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RoadStatusApi", "RoadStatusApi\RoadStatusApi.csproj", "{14048F42-B7C1-46F4-95A5-BB1D38FAADF3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RoadStatusSharedTest", "RoadStatusSharedTest\RoadStatusSharedTest.csproj", "{F54EFE47-D3F2-4373-B837-1C7ADB34B7A8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConfigProvider", "ConfigProvider\ConfigProvider.csproj", "{3D7786C2-B52D-4663-88EC-76327CB32BA1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConfigProviderTest", "ConfigProviderTest\ConfigProviderTest.csproj", "{68FD4EE2-BF80-4991-84B1-8AF9061EFEBC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logging", "Logging\Logging.csproj", "{4DFA2D11-D0B1-4FCB-9A1F-E25333F07545}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{53B0B884-0F30-46FB-BBB3-43D3D43E0F9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53B0B884-0F30-46FB-BBB3-43D3D43E0F9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53B0B884-0F30-46FB-BBB3-43D3D43E0F9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53B0B884-0F30-46FB-BBB3-43D3D43E0F9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB5C5FD0-453A-47F0-B698-F7687D711578}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB5C5FD0-453A-47F0-B698-F7687D711578}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB5C5FD0-453A-47F0-B698-F7687D711578}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB5C5FD0-453A-47F0-B698-F7687D711578}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14048F42-B7C1-46F4-95A5-BB1D38FAADF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14048F42-B7C1-46F4-95A5-BB1D38FAADF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14048F42-B7C1-46F4-95A5-BB1D38FAADF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14048F42-B7C1-46F4-95A5-BB1D38FAADF3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F54EFE47-D3F2-4373-B837-1C7ADB34B7A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F54EFE47-D3F2-4373-B837-1C7ADB34B7A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F54EFE47-D3F2-4373-B837-1C7ADB34B7A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F54EFE47-D3F2-4373-B837-1C7ADB34B7A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D7786C2-B52D-4663-88EC-76327CB32BA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D7786C2-B52D-4663-88EC-76327CB32BA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D7786C2-B52D-4663-88EC-76327CB32BA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D7786C2-B52D-4663-88EC-76327CB32BA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68FD4EE2-BF80-4991-84B1-8AF9061EFEBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68FD4EE2-BF80-4991-84B1-8AF9061EFEBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68FD4EE2-BF80-4991-84B1-8AF9061EFEBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68FD4EE2-BF80-4991-84B1-8AF9061EFEBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DFA2D11-D0B1-4FCB-9A1F-E25333F07545}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DFA2D11-D0B1-4FCB-9A1F-E25333F07545}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DFA2D11-D0B1-4FCB-9A1F-E25333F07545}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DFA2D11-D0B1-4FCB-9A1F-E25333F07545}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DFE236DA-458F-440D-8DAC-42A220D174D5}
+	EndGlobalSection
+EndGlobal
